@@ -1,0 +1,22 @@
+.custom-icon{
+    color:darkgreen;
+    margin-right: 15px;
+    
+
+}
+
+.mail-preview{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    
+    border: solid 0.5px rgb(236, 235, 235);
+    
+
+}
+
+.mail-preview p{
+  
+    padding: 1em ;
+
+}
