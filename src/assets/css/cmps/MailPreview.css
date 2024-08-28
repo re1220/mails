@@ -3,28 +3,12 @@
 }
 
 .icon-starred {
-    fill: gold;
+    fill: rgb(241, 229, 161);
+    background-color: blue;
 }
 
 
 .mail-preview{
-
-    grid-area: mails;
-    background-color: azure;
-
-    display: grid;
-    grid-template-columns: 0.5fr ;
-    flex-direction: row;
-    align-items: start;
-    justify-items: start;
-  
-    padding: 1em;
-    gap: 15px;
-
-    border: solid 0.5px rgb(236, 235, 235);
-} 
-
-/* .mail-preview{
 
     grid-area: mails;
     background-color: azure;
@@ -38,9 +22,16 @@
     gap: 15px;
 
     border: solid 0.5px rgb(236, 235, 235);
-}  */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+} 
 
-
+.mail-preview:hover{
+    border: solid 1px rgb(206, 206, 206);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Larger shadow for 3D effect */
+    
+}
 
 .sender{
     /* width: 100%; */
@@ -51,5 +42,7 @@
 .body{
     background-color: rgb(154, 216, 252);
 }
+
+
 
 
