@@ -7,12 +7,16 @@
 @import "./App.css";
 
 /* Pages */
-@import "./pages/about.css";
+
+@import "./pages/MailIndex.css";
 
 /* Components */
-@import "./cmps/AppHeader.css";
-@import "./cmps/AppFooter.css";
+@import "./cmps/MailSearch.css";
 @import "./cmps/MailList.css";
+@import "./cmps/MailHeader.css";
 @import "./cmps/MailPreview.css";
+
+
+
 
 

@@ -5,13 +5,14 @@ import { MailIndex } from "./pages/MailIndex"
 import { MailDetails } from "./pages/MailDetails"
 
 
+
 export function App() {
 
     return <Router>
         <main>
             <Routes>
-                <Route path="/" element={<MailIndex />} />
-                <Route path="/mail/:id" element={<MailDetails />} />
+                <Route path="/" element={<MailIndex/>} />
+                <Route path="/:id" element={<MailDetails/>} />
 
             </Routes>
 

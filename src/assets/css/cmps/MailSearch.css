@@ -1,0 +1,20 @@
+.search {
+    grid-area: search;
+    
+    align-self: center;
+    justify-self: start;
+    margin-inline-start: 2em;
+    
+}
+
+.search-input{
+    background-color: rgb(206, 208, 209);
+    border-radius: 10px;
+    border-color: 2px solid rgb(169, 146, 146);
+    
+    font-size:1em;
+    /* width: 100%;
+    height: 40%; */
+
+
+}

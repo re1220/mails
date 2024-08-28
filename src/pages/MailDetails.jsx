@@ -15,13 +15,18 @@ export function MailDetails() {
 
     async function loadMail() {
         const mail = await mailService.getById(id)
+        console.log("the deatails", mail)
+
         setMail(mail)
     }
+    
+    if(!mail) return <div></div>
 
     return <section className="robot-details">
+    
         <h1>{mail.subject}</h1>
         <pre>{mail.body}</pre>
-        <Link to="/mails" >Back</Link>
+        <Link to="/" >Back</Link>
 
     </section>
 }
