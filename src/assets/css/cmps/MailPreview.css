@@ -1,25 +1,38 @@
 .icon{
-    margin-right: 15px;
     align-self: center;
-    justify-self: start;
-    size: 1em;
-
-    
-    
 }
+
 .icon-starred {
     fill: gold;
 }
 
 
 .mail-preview{
+
+    grid-area: mails;
+    background-color: azure;
+
     display: flex;
     flex-direction: row;
-    padding: 1em ;
+    align-items: start;
     justify-items: start;
-    align-items: center;
+  
+    padding: 1em;
     gap: 15px;
-    border-color: 1px solid rgb(242, 238, 238);
-    
+
+    border: solid 0.5px rgb(236, 235, 235);
+} 
+
+
+
+.sender{
+    /* width: 100%; */
+
+    background-color: rgb(123, 136, 235);
 }
+
+.body{
+    background-color: rgb(154, 216, 252);
+}
+
 

@@ -1,23 +1,20 @@
 
 .header-image{
     grid-area: gmail;
-    align-self: center;
-    justify-self: center;
-    margin-inline-start: 5px;
     
-    display: block;
-    margin-inline-start: 0.5em;
-    margin-right: auto;
-    width: 800%;
+    justify-self: center;
+    align-self: center;
+ 
+    width: 85%;
 
 }
 
-/* .settings {
+.settings {
     grid-area: settings;
     justify-self: end;
     align-self: center;
-    margin-inline-end: 25px ;
-    
-} */
+    margin-inline-end: 15px ;
+}
+
 
 

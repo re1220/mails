@@ -1,7 +1,7 @@
 .mail-index{
     display: grid;
     grid-template-columns: 1fr 6fr auto ;
-    grid-template-rows:    0.3fr auto; 
+    grid-template-rows:    0.2fr auto ; 
     gap: 1px ;
     
     
@@ -11,36 +11,20 @@
     width: 100%; 
     height: 100%;
 
-    grid-template-areas: " gmail   search settings"
+    grid-template-areas: " gmail search settings"
                           "folders mails  mails" 
                           
                 
 }
 
 
-.settings {
-    grid-area: settings;
-    justify-self: end;
-    align-self: center;
-    margin-inline-end: 15px ;
-}
-
-
-.gmail {
-    grid-area: gmail;
-   
-    place-content: center;
-
-    margin-inline-start: 5px;
-
-}
-
 .folders {
     grid-area: folders;
     
     display: flex;
     flex-direction: column;
+    margin-block: 1em;
+    padding: 1em;
     gap: 2em;
-    margin-inline-start: 1em;
 
 }

@@ -20,8 +20,8 @@ export function MailPreview({ mail }) {
             <section className="mail-preview">
                 <CiStar onClick={onStarClick} className= {isStar? " icon icon-starred" :'icon'} />
                 <Link to={`/${mail.id}`} >
-                <div>{mail.sender}</div>
-                <div className="subject">{mail.subject}</div>
+                <div className="sender">{mail.sender}</div>
+                <div className="body">{mail.subject}</div>
                 </Link>
 
             </section>
