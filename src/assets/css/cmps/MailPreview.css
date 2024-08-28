@@ -12,7 +12,8 @@
     grid-area: mails;
     background-color: azure;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.5fr ;
     flex-direction: row;
     align-items: start;
     justify-items: start;
@@ -22,6 +23,22 @@
 
     border: solid 0.5px rgb(236, 235, 235);
 } 
+
+/* .mail-preview{
+
+    grid-area: mails;
+    background-color: azure;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-items: start;
+  
+    padding: 1em;
+    gap: 15px;
+
+    border: solid 0.5px rgb(236, 235, 235);
+}  */
 
 
 
