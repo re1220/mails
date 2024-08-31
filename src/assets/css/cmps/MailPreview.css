@@ -1,41 +1,46 @@
 .icon{
     align-self: center;
+    size: 2em;
 }
 
 .icon-starred {
+    color: darkkhaki;
     fill: rgb(241, 229, 161);
-    background-color: blue;
 }
 
 
 .mail-preview{
-
     grid-area: mails;
     background-color: azure;
 
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-items: start;
+    align-content: start;
   
-    padding: 1em;
-    gap: 15px;
+    padding: 0.5em;
+    gap: 12px;
 
-    border: solid 0.5px rgb(236, 235, 235);
+    border: solid 0.1px#e6e6e6;
+    
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Initial shadow */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
 } 
 
 .mail-preview:hover{
-    border: solid 1px rgb(206, 206, 206);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Larger shadow for 3D effect */
-    
+    border: solid 2px rgb(206, 206, 206);
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.3); /* Larger shadow for 3D effect */
+    /* rgba(100, 121, 143, .12); */
+}
+
+.mail-preview.read{
+    /* background-color: #f2f2f2; */
+    background-color: #e6e6e6;
+
 }
 
 .sender{
-    /* width: 100%; */
-
+    /* width: 70%; */
     background-color: rgb(123, 136, 235);
 }
 

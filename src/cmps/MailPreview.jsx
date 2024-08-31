@@ -4,27 +4,24 @@ import { Link } from "react-router-dom";
 
 export function MailPreview({ mail }) {
 
-    const [isStar,setIsStar]= useState(false)
+    const [isStar, setIsStar] = useState(false)
     
-    function onStarClick(){
+    
+    function onStarClick() {
         setIsStar(!isStar)
-        
+
     }
 
-    useEffect(()=>{
-
-    },[isStar])
-
     return (
-        
-            <section className="mail-preview">
-                <CiStar onClick={onStarClick} className= {isStar? " icon icon-starred" :'icon'} />
-                <Link to={`/${mail.id}`} >
+
+        <section className={mail.isRead ? "mail-preview read" : "mail-preview"}>
+            <CiStar onClick={onStarClick} className={mail.isStarred ? " icon icon-starred" : 'icon'} />
+            <Link to={`/${mail.id}`} >
                 <div className="sender">{mail.sender}</div>
                 <div className="body">{mail.subject}</div>
-                </Link>
+            </Link>
 
-            </section>
-       
+        </section>
+
     )
 }

@@ -18,9 +18,9 @@ export function MailFolders({onFilterBy}){
     
     return (
         <section className = "folders">
-            <div onClick={onFolderClick({ to: 'user@appsus.com' })}>Inbox</div>
-            <div onClick={onFolderClick({ isStarred: true })}>Starred</div>
-            <div >Sent</div>
+            <div className="folder" onClick={onFolderClick({ to: 'user@appsus.com' })}>Inbox</div>
+            <div className="folder" onClick={onFolderClick({ isStarred: true })}>Starred</div>
+            <div  className="folder">Sent</div>
         </section>
 
     )

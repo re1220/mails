@@ -1,6 +1,5 @@
-import { useState } from "react"
 
-import { MailPreview} from './MailPreview'
+import { MailPreview } from './MailPreview';
 
 export function MailList({ mails }) {
 
@@ -9,11 +8,9 @@ export function MailList({ mails }) {
             <ul>
                 {mails.map(mail => <li key={mail.id}>
                     <MailPreview mail={mail} />
-
                 </li>)}
             </ul>
            
         </section>
     )
 }
-
